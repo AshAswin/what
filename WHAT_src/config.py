@@ -15,7 +15,7 @@ parser.add_argument("--exp_dir", type=str, default="../WHAT_exp")
 parser.add_argument("--exp_load", type=str, default=None)
 
 # Data
-parser.add_argument("--data_dir", type=str, default="/mnt/sda")
+parser.add_argument("--data_dir", type=str, default="./data/")
 parser.add_argument("--data_name", type=str, default="fashion_mnist")
 parser.add_argument('--batch_size', type=int, default=32)
 parser.add_argument('--rgb_range', type=int, default=1)
@@ -29,7 +29,7 @@ parser.add_argument('--var_weight', type=float, default=1.)
 parser.add_argument('--drop_rate', type=float, default=0.2)
 
 # Train
-parser.add_argument("--epochs", type=int, default=200)
+parser.add_argument("--epochs", type=int, default=1)
 parser.add_argument("--lr", type=float, default=1e-3)
 parser.add_argument("--decay", type=str, default='50-100-150-200')
 parser.add_argument("--gamma", type=float, default=0.5)
